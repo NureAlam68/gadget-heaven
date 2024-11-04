@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <div className="pt-[30px] px-[3-px]">
+    <div className="pt-[30px] px-[30px]">
       <div className="h-[694px] bg-[#9538E2] rounded-[32px] border-[7px] relative">
         <div className="px-[130px] pt-[30px] flex justify-between items-center">
           <div>
@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1110px] h-[610px] border-2 border-white rounded-[32px] p-6 bg-[#FFFFFF4D] mx-auto absolute top-[530px] left-[400px]">
+      <div className="w-[1110px] h-[610px] border-2 border-white rounded-[32px] p-6 bg-[#FFFFFF4D] mx-auto relative -top-[180px]">
             <div className="bg-banner h-[563px] bg-cover bg-center bg-no-repeat rounded-[24px] w-full">
 
             </div>
