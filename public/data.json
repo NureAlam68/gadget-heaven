@@ -1,0 +1,194 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "Dell XPS 15",
+        "product_image": "dell_xps_15.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "Dell XPS 15 laptop with stunning 4K display and powerful performance.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "NVIDIA GTX 1650 Ti"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "2",
+        "product_title": "HP Spectre x360",
+        "product_image": "hp_spectre_x360.jpg",
+        "category": "Laptops",
+        "price": 950,
+        "description": "HP Spectre x360 convertible laptop with 4K touchscreen.",
+        "Specification": [
+            "Intel Core i5",
+            "8GB RAM",
+            "256GB SSD",
+            "13-inch 4K OLED display"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "3",
+        "product_title": "Lenovo ThinkPad X1",
+        "product_image": "lenovo_thinkpad_x1.jpg",
+        "category": "Laptops",
+        "price": 1100,
+        "description": "Lightweight and durable laptop, ideal for business professionals.",
+        "Specification": [
+            "Intel Core i5",
+            "8GB RAM",
+            "256GB SSD",
+            "14-inch Full HD display"
+        ],
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": "4",
+        "product_title": "Surface Laptop 4",
+        "product_image": "surface_laptop_4.jpg",
+        "category": "Laptops",
+        "price": 1050,
+        "description": "Powerful and sleek laptop with touchscreen functionality.",
+        "Specification": [
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD",
+            "13.5-inch PixelSense display"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "5",
+        "product_title": "Acer Aspire 5",
+        "product_image": "acer_aspire_5.jpg",
+        "category": "Laptops",
+        "price": 850,
+        "description": "Affordable laptop suitable for students and everyday tasks.",
+        "Specification": [
+            "Intel Core i5",
+            "8GB RAM",
+            "256GB SSD",
+            "15.6-inch Full HD display"
+        ],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "6",
+        "product_title": "ASUS VivoBook 15",
+        "product_image": "asus_vivobook_15.jpg",
+        "category": "Laptops",
+        "price": 700,
+        "description": "Budget-friendly laptop with decent performance for daily use.",
+        "Specification": [
+            "AMD Ryzen 3",
+            "8GB RAM",
+            "128GB SSD",
+            "15.6-inch Full HD display"
+        ],
+        "availability": false,
+        "rating": 4.0
+    },
+    {
+        "product_id": "7",
+        "product_title": "Galaxy S21 Ultra",
+        "product_image": "galaxy_s21_ultra.jpg",
+        "category": "Phones",
+        "price": 800,
+        "description": "Samsung Galaxy S21 with high-resolution camera and 5G support.",
+        "Specification": [
+            "Exynos 2100",
+            "8GB RAM",
+            "128GB Storage",
+            "Triple-lens camera"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "8",
+        "product_title": "Google Pixel 6",
+        "product_image": "google_pixel_6.jpg",
+        "category": "Phones",
+        "price": 750,
+        "description": "Google Pixel 6 with advanced AI-powered camera and Tensor chip.",
+        "Specification": [
+            "Google Tensor",
+            "8GB RAM",
+            "128GB Storage",
+            "Dual-lens camera"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "9",
+        "product_title": "MacBook Air M1",
+        "product_image": "macbook_air_m1.jpg",
+        "category": "MacBook",
+        "price": 1000,
+        "description": "Apple MacBook Air with M1 chip, thin and powerful.",
+        "Specification": [
+            "Apple M1 chip",
+            "8GB RAM",
+            "256GB SSD",
+            "13.3-inch Retina display"
+        ],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": "10",
+        "product_title": "MacBook Pro 14",
+        "product_image": "macbook_pro_14.jpg",
+        "category": "MacBook",
+        "price": 1300,
+        "description": "Apple MacBook Pro with M1 Pro chip for professionals.",
+        "Specification": [
+            "Apple M1 Pro chip",
+            "16GB RAM",
+            "512GB SSD",
+            "14-inch Retina display"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "11",
+        "product_title": "iPhone 13 Mini",
+        "product_image": "iphone_13_mini.jpg",
+        "category": "iPhone",
+        "price": 900,
+        "description": "Apple iPhone 13 Mini with A15 Bionic chip and 5G support.",
+        "Specification": [
+            "A15 Bionic chip",
+            "128GB Storage",
+            "5.4-inch Super Retina XDR display",
+            "5G support"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "12",
+        "product_title": "iPhone 13 Pro",
+        "product_image": "iphone_13_pro.jpg",
+        "category": "iPhone",
+        "price": 1200,
+        "description": "Apple iPhone 13 Pro with ProMotion display and triple-camera system.",
+        "Specification": [
+            "A15 Bionic chip",
+            "256GB Storage",
+            "6.1-inch Super Retina XDR display with ProMotion",
+            "5G support"
+        ],
+        "availability": false,
+        "rating": 4.9
+    }
+]
