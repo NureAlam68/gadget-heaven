@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaSquareFull } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { addToStoredCart, addToStoredWish } from "../utilities/addToLs";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
@@ -19,6 +20,14 @@ const GadgetDetails = () => {
     rating,
   } = gadget;
   
+
+  const handleAddCart = id => {
+    addToStoredCart(id)
+  }
+
+  const handleAddWishlist = id => {
+    addToStoredWish(id)
+  }
 
   
   return (
@@ -93,11 +102,11 @@ const GadgetDetails = () => {
               </button>
             </div>
             <div className="flex items-center gap-4 mt-4">
-              <button className="flex items-center gap-3 px-[22px] py-[11px] rounded-[32px] bg-[#9538E2] text-white">
+              <button onClick={()=> handleAddCart(id)} className="flex items-center gap-3 px-[22px] py-[11px] rounded-[32px] bg-[#9538E2] text-white">
                 <p className="text-[18px] font-bold">Add To Cart</p>
                 <IoCartOutline size={25}/>
               </button>
-              <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
+              <button onClick={()=> handleAddWishlist(id)} className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
               <CiHeart size={25} />
             </button>
             </div>
