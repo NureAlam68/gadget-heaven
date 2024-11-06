@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Card = ({gadget}) => {
-    const {title, image, price} = gadget
+    const {title, image, price, id} = gadget
     return (
         <div className="p-5 bg-white rounded-[16px] border">
             <img className="h-[181px] w-[282px] rounded-[12px]" src={image} alt="" />
@@ -7,10 +9,10 @@ const Card = ({gadget}) => {
                 {title}
             </h2>
             <p className="mt-3 text-[20px] font-medium text-[#09080F99]">
-                Price: {price}k
+                Price: ${price}
             </p>
             <button className="px-[22px] py-[13px] rounded-[32px] border-2 border-x-purple-600 border-t-purple-600 border-b-pink-500 mt-4 text-[18px] text-[#9538E2] font-semibold hover:bg-[#9538E2] hover:text-white hover:border-b-purple-600">
-                View Details
+                <Link to={`/gadget/${id}`}>View Details</Link>
             </button>
         </div>
     );

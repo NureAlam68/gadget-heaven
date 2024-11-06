@@ -1,10 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
+  const {pathname} = useLocation();
   return (
-    <div className="pt-[30px] px-[30px]">
+    <>
+      {
+        pathname === '/' ? (
+          <div className="pt-[30px] px-[30px]">
       <div className="h-[694px] bg-[#9538E2] rounded-[32px] border-[7px] relative">
         <div className="px-[130px] pt-[30px] flex justify-between items-center">
           <div>
@@ -46,6 +50,29 @@ const Navbar = () => {
             </div>
       </div>
     </div>
+        ) : (
+          <div className="px-[130px] py-[30px] flex justify-between items-center">
+          <div>
+            <h2 className="text-[20px] font-bold">Gadget Heaven</h2>
+          </div>
+          <div className="flex gap-[48px] text-base font-medium text-[#0B0B0BB3]">
+            <NavLink to="/">Home</NavLink>
+            <NavLink>Gadgets</NavLink>
+            <NavLink>Statistics</NavLink>
+            <NavLink>Dashboard</NavLink>
+          </div>
+          <div className="flex gap-4">
+            <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
+              <IoCartOutline size={20} />
+            </button>
+            <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
+              <CiHeart size={20} />
+            </button>
+          </div>
+        </div>
+        )
+      }
+    </>
   );
 };
 

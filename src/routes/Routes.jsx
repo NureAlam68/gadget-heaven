@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout";
 import Home from "../pages/Home";
 import GadgetCards from "../components/GadgetCards";
 import NoData from "../components/NoData";
+import GadgetDetails from "../pages/GadgetDetails";
 
 
 
@@ -32,6 +33,11 @@ const routes = createBrowserRouter([
                         element: <NoData></NoData>
                     }
                 ]
+            },
+            {
+                path: "/gadget/:id",
+                element: <GadgetDetails></GadgetDetails>,
+                loader: ()=> fetch('../data.json')
             }
         ]
     }

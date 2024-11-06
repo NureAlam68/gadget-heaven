@@ -4,7 +4,7 @@ import Categories from "../components/Categories";
 const Home = () => {
     const categories = useLoaderData();
     return (
-        <div className="px-[160px] mt-5">
+        <div className="px-[160px] -mt-20">
             <h1 className="text-[40px] font-bold text-center">
             Explore Cutting-Edge Gadgets
             </h1>

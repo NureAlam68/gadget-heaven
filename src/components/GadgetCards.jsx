@@ -22,7 +22,7 @@ const GadgetCards = () => {
       
        <>
        
-       <div className="grid grid-cols-3 gap-6">
+       <div className="grid grid-cols-3 gap-6 mb-[48px]">
         {
             gadgets.map(gadget => <Card key={gadget.id} gadget={gadget}></Card>)
         }

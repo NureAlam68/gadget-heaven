@@ -1,194 +1,194 @@
 [
-    {
-        "id": "1",
-        "title": "Dell XPS 15",
-        "image": "https://i.ibb.co.com/Xjn4J48/computer-technology-illuminates-modern-office-with-creativity-connection-generated-by-artificial-int.jpg",
-        "category": "Laptops",
-        "price": 1200,
-        "description": "Dell XPS 15 laptop with stunning 4K display and powerful performance.",
-        "Specification": [
-            "Intel Core i7",
-            "16GB RAM",
-            "512GB SSD",
-            "NVIDIA GTX 1650 Ti"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "id": "2",
-        "title": "HP Spectre x360",
-        "image": "https://i.ibb.co.com/3yS3H40/672176.jpg",
-        "category": "Laptops",
-        "price": 950,
-        "description": "HP Spectre x360 convertible laptop with 4K touchscreen.",
-        "Specification": [
-            "Intel Core i5",
-            "8GB RAM",
-            "256GB SSD",
-            "13-inch 4K OLED display"
-        ],
-        "availability": true,
-        "rating": 4.5
-    },
-    {
-        "id": "3",
-        "title": "Lenovo ThinkPad X1",
-        "image": "https://i.ibb.co.com/q1p84wv/8147100.jpg",
-        "category": "Laptops",
-        "price": 1100,
-        "description": "Lightweight and durable laptop, ideal for business professionals.",
-        "Specification": [
-            "Intel Core i5",
-            "8GB RAM",
-            "256GB SSD",
-            "14-inch Full HD display"
-        ],
-        "availability": false,
-        "rating": 4.3
-    },
-    {
-        "id": "4",
-        "title": "Surface Laptop 4",
-        "image": "https://i.ibb.co.com/5kVrb2N/jaime-marrero-d-48t-65gdo-unsplash.jpg",
-        "category": "Laptops",
-        "price": 1050,
-        "description": "Powerful and sleek laptop with touchscreen functionality.",
-        "Specification": [
-            "Intel Core i7",
-            "16GB RAM",
-            "512GB SSD",
-            "13.5-inch PixelSense display"
-        ],
-        "availability": true,
-        "rating": 4.4
-    },
-    {
-        "id": "5",
-        "title": "Acer Aspire 5",
-        "image": "https://i.ibb.co.com/W2vmz78/anete-lusina-zws-Hjak-E-i-I-unsplash.jpg",
-        "category": "Laptops",
-        "price": 850,
-        "description": "Affordable laptop suitable for students and everyday tasks.",
-        "Specification": [
-            "Intel Core i5",
-            "8GB RAM",
-            "256GB SSD",
-            "15.6-inch Full HD display"
-        ],
-        "availability": true,
-        "rating": 4.1
-    },
-    {
-        "id": "6",
-        "title": "ASUS VivoBook 15",
-        "image": "https://i.ibb.co.com/Z1mwz7N/1400379.jpg",
-        "category": "Laptops",
-        "price": 700,
-        "description": "Budget-friendly laptop with decent performance for daily use.",
-        "Specification": [
-            "AMD Ryzen 3",
-            "8GB RAM",
-            "128GB SSD",
-            "15.6-inch Full HD display"
-        ],
-        "availability": false,
-        "rating": 4.0
-    },
-    {
-        "id": "7",
-        "title": "Galaxy S21 Ultra",
-        "image": "https://i.ibb.co.com/TTCJrwN/anh-nhat-u-Cq-Ma-s-JDg-unsplash.jpg",
-        "category": "Phones",
-        "price": 800,
-        "description": "Samsung Galaxy S21 with high-resolution camera and 5G support.",
-        "Specification": [
-            "Exynos 2100",
-            "8GB RAM",
-            "128GB Storage",
-            "Triple-lens camera"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "id": "8",
-        "title": "Google Pixel 6",
-        "image": "https://i.ibb.co.com/bXQW3LH/amjith-s-SXxuzn-ANFj-E-unsplash.jpg",
-        "category": "Phones",
-        "price": 750,
-        "description": "Google Pixel 6 with advanced AI-powered camera and Tensor chip.",
-        "Specification": [
-            "Google Tensor",
-            "8GB RAM",
-            "128GB Storage",
-            "Dual-lens camera"
-        ],
-        "availability": true,
-        "rating": 4.2
-    },
-    {
-        "id": "9",
-        "title": "Apple Watch 7",
-        "image": "https://i.ibb.co.com/dpbMR7N/hand-using-smartwatch-close-up.jpg",
-        "category": "Smart Watches",
-        "price": 399,
-        "description": "Apple Watch Series 7 with larger display and health tracking.",
-        "Specification": [
-            "Always-On Retina display",
-            "Heart rate monitor",
-            "Blood oxygen sensor",
-            "Water resistant"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "id": "10",
-        "title": "Samsung Galaxy Watch",
-        "image": "https://i.ibb.co.com/xJ9cYgT/high-angle-man-wearing-watch.jpg",
-        "category": "Smart Watches",
-        "price": 350,
-        "description": "Samsung Galaxy Watch with advanced fitness tracking and 4G LTE.",
-        "Specification": [
-            "AMOLED display",
-            "GPS tracking",
-            "ECG monitoring",
-            "Sleep analysis"
-        ],
-        "availability": true,
-        "rating": 4.5
-    },
-    {
-        "id": "2",
-        "title": "RAVPower 16750",
-        "image": "https://i.ibb.co.com/dfFJBD2/2301-i203-020-S-m004-c13-powerbank-charger-battery-realistic.jpg",
-        "category": "Power Banks",
-        "price": 50,
-        "description": "RAVPower 16750mAh power bank with dual output and fast charging.",
-        "Specification": [
-            "16750mAh capacity",
-            "Dual USB ports",
-            "Overcharge protection",
-            "Compact design"
-        ],
-        "availability": false,
-        "rating": 4.5
-    },
-    {
-        "id": "3",
-        "title": "Xiaomi Mi 3",
-        "image": "https://i.ibb.co.com/L6q1FzC/png-power-bank-isolated-white-background.jpg",
-        "category": "Power Banks",
-        "price": 55,
-        "description": "Xiaomi Mi Power Bank 3 with 20000mAh capacity and fast charging.",
-        "Specification": [
-            "20000mAh capacity",
-            "USB-C input/output",
-            "Two-way fast charging",
-            "Slim design"
-        ],
-        "availability": true,
-        "rating": 4.6
-    }
+  {
+    "id": "1",
+    "title": "Dell XPS 15",
+    "image": "https://i.ibb.co.com/Xjn4J48/computer-technology-illuminates-modern-office-with-creativity-connection-generated-by-artificial-int.jpg",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "Dell XPS 15 laptop with stunning 4K display and powerful performance.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1650 Ti"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": "2",
+    "title": "HP Spectre x360",
+    "image": "https://i.ibb.co.com/3yS3H40/672176.jpg",
+    "category": "Laptops",
+    "price": 950,
+    "description": "HP Spectre x360 convertible laptop with 4K touchscreen.",
+    "specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "13-inch 4K OLED display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": "3",
+    "title": "Lenovo ThinkPad X1",
+    "image": "https://i.ibb.co.com/q1p84wv/8147100.jpg",
+    "category": "Laptops",
+    "price": 1100,
+    "description": "Lightweight and durable laptop, ideal for business professionals.",
+    "specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch Full HD display"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "id": "4",
+    "title": "Surface Laptop 4",
+    "image": "https://i.ibb.co.com/5kVrb2N/jaime-marrero-d-48t-65gdo-unsplash.jpg",
+    "category": "Laptops",
+    "price": 1050,
+    "description": "Powerful and sleek laptop with touchscreen functionality.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "13.5-inch PixelSense display"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "id": "5",
+    "title": "Acer Aspire 5",
+    "image": "https://i.ibb.co.com/W2vmz78/anete-lusina-zws-Hjak-E-i-I-unsplash.jpg",
+    "category": "Laptops",
+    "price": 850,
+    "description": "Affordable laptop suitable for students and everyday tasks.",
+    "specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch Full HD display"
+    ],
+    "availability": true,
+    "rating": 4.1
+  },
+  {
+    "id": "6",
+    "title": "ASUS VivoBook 15",
+    "image": "https://i.ibb.co.com/Z1mwz7N/1400379.jpg",
+    "category": "Laptops",
+    "price": 700,
+    "description": "Budget-friendly laptop with decent performance for daily use.",
+    "specification": [
+      "AMD Ryzen 3",
+      "8GB RAM",
+      "128GB SSD",
+      "15.6-inch Full HD display"
+    ],
+    "availability": true,
+    "rating": 4.0
+  },
+  {
+    "id": "7",
+    "title": "Galaxy S21 Ultra",
+    "image": "https://i.ibb.co.com/TTCJrwN/anh-nhat-u-Cq-Ma-s-JDg-unsplash.jpg",
+    "category": "Phones",
+    "price": 800,
+    "description": "Samsung Galaxy S21 with high-resolution camera and 5G support.",
+    "specification": [
+      "Exynos 2100",
+      "8GB RAM",
+      "128GB Storage",
+      "Triple-lens camera"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": "8",
+    "title": "Google Pixel 6",
+    "image": "https://i.ibb.co.com/bXQW3LH/amjith-s-SXxuzn-ANFj-E-unsplash.jpg",
+    "category": "Phones",
+    "price": 750,
+    "description": "Google Pixel 6 with advanced AI-powered camera and Tensor chip.",
+    "specification": [
+      "Google Tensor",
+      "8GB RAM",
+      "128GB Storage",
+      "Dual-lens camera"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "id": "9",
+    "title": "Apple Watch 7",
+    "image": "https://i.ibb.co.com/dpbMR7N/hand-using-smartwatch-close-up.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Apple Watch Series 7 with larger display and health tracking.",
+    "specification": [
+      "Always-On Retina display",
+      "Heart rate monitor",
+      "Blood oxygen sensor",
+      "Water resistant"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": "10",
+    "title": "Samsung Galaxy Watch",
+    "image": "https://i.ibb.co.com/xJ9cYgT/high-angle-man-wearing-watch.jpg",
+    "category": "Smart Watches",
+    "price": 350,
+    "description": "Samsung Galaxy Watch with advanced fitness tracking and 4G LTE.",
+    "specification": [
+      "AMOLED display",
+      "GPS tracking",
+      "ECG monitoring",
+      "Sleep analysis"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": "11",
+    "title": "RAVPower 16750",
+    "image": "https://i.ibb.co.com/dfFJBD2/2301-i203-020-S-m004-c13-powerbank-charger-battery-realistic.jpg",
+    "category": "Power Banks",
+    "price": 55,
+    "description": "RAVPower 16750mAh power bank with dual output and fast charging.",
+    "specification": [
+      "16750mAh capacity",
+      "Dual USB ports",
+      "Overcharge protection",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": "12",
+    "title": "Xiaomi Mi 3",
+    "image": "https://i.ibb.co.com/L6q1FzC/png-power-bank-isolated-white-background.jpg",
+    "category": "Power Banks",
+    "price": 60,
+    "description": "Xiaomi Mi Power Bank 3 with 20000mAh capacity and fast charging.",
+    "specification": [
+      "20000mAh capacity",
+      "USB-C input/output",
+      "Two-way fast charging",
+      "Slim design"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }
 ]
