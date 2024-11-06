@@ -1,13 +1,27 @@
 import "./Dashboard.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import { useLoaderData } from "react-router-dom";
+import { getStoredCart } from "../utilities/addToLs";
+import { FaSort } from "react-icons/fa";
 
 const Dashboard = () => {
+    const gadgets = useLoaderData();
     const [isActive, setActive] = useState({
         cart: true,
         status: "cart",
     })
+
+    const [cartList, setCart] = useState([])
+    const [wishList, setWishList] = useState([]);
+
+    useEffect(()=> {
+        const storedCart = getStoredCart();
+
+        const cartItem = gadgets.filter(gadget => storedCart.includes(gadget.id))
+        setCart(cartItem)
+    }, [gadgets])
 
     const handleActive = status => {
         if(status === "cart"){
@@ -40,7 +54,22 @@ const Dashboard = () => {
             
                 <div className="mt-[48px]">
                 {
-                    isActive.cart ? <Cart></Cart> : <Wishlist></Wishlist>
+                    isActive.cart ? 
+                    <div className="px-[160px]">
+                        <div className="flex justify-between items-center">
+                            <h1 className="text-[24px] font-bold">Cart</h1>
+                            <div className="flex gap-4 items-center">
+                                <h2 className="text-[24px] font-bold mr-2">Total cost: $0</h2>
+                                <button className="flex items-center gap-3 px-[22px] py-[13px] border border-[#9538E2] text-[#9538E2] rounded-[32px]"><p className="text-[18px] font-semibold">Sort by Price</p><FaSort size={21}/></button>
+                                <button className="px-[26px] py-[13px] bg-[#9538E2] rounded-[32px] text-[18px] font-medium text-white">Purchase</button>
+                            </div>
+                        </div>
+                        <div className="mt-8 flex flex-col gap-6 pb-[100px]">
+                            {
+                                cartList.map(cart => <Cart cart={cart}></Cart>)
+                            }
+                        </div>
+                    </div> : <Wishlist></Wishlist>
                 }
                 </div>
             
