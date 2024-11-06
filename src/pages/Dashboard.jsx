@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import { useLoaderData } from "react-router-dom";
-import { getStoredCart } from "../utilities/addToLs";
+import { getStoredCart, getStoredWishlist } from "../utilities/addToLs";
 import { FaSort } from "react-icons/fa";
 
 const Dashboard = () => {
@@ -21,6 +21,13 @@ const Dashboard = () => {
 
         const cartItem = gadgets.filter(gadget => storedCart.includes(gadget.id))
         setCart(cartItem)
+    }, [gadgets])
+
+    useEffect(()=> {
+        const storedWishList = getStoredWishlist();
+
+        const wishItem = gadgets.filter(gadget => storedWishList.includes(gadget.id))
+        setWishList(wishItem)
     }, [gadgets])
 
     const handleActive = status => {
@@ -69,7 +76,17 @@ const Dashboard = () => {
                                 cartList.map(cart => <Cart cart={cart}></Cart>)
                             }
                         </div>
-                    </div> : <Wishlist></Wishlist>
+                    </div> : 
+                    <div className="px-[160px]">
+                        <div>
+                        <h1 className="text-[24px] font-bold">WishList</h1>
+                        </div>
+                        <div className="mt-8 flex flex-col gap-6 pb-[100px]">
+                            {
+                                wishList.map(wish => <Wishlist wish={wish}></Wishlist>)
+                            }
+                        </div>
+                    </div>
                 }
                 </div>
             
