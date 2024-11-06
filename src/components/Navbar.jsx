@@ -18,7 +18,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
             <NavLink>Gadgets</NavLink>
             <NavLink>Statistics</NavLink>
-            <NavLink>Dashboard</NavLink>
+            <NavLink to="/dashboard">Dashboard</NavLink>
           </div>
           <div className="flex gap-4">
             <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
@@ -59,7 +59,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
             <NavLink>Gadgets</NavLink>
             <NavLink>Statistics</NavLink>
-            <NavLink>Dashboard</NavLink>
+            <NavLink to="/dashboard">Dashboard</NavLink>
           </div>
           <div className="flex gap-4">
             <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">

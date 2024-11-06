@@ -1,0 +1,15 @@
+.btn-one{
+    padding: 13px 64px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.active-btn{
+    background-color: white;
+    font-size: 18px;
+    font-weight: 800;
+    color: #9538E2;
+}
