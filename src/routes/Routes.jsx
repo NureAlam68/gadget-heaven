@@ -7,6 +7,7 @@ import GadgetDetails from "../pages/GadgetDetails";
 import Dashboard from "../pages/Dashboard";
 import ErrorPage from "../pages/ErrorPage";
 import Statistics from "../pages/Statistics";
+import Seller from "../pages/Seller";
 
 
 
@@ -50,6 +51,10 @@ const routes = createBrowserRouter([
             {
                 path: "/statistics",
                 element: <Statistics></Statistics>
+            },
+            {
+                path: "/seller",
+                element: <Seller></Seller>
             }
         ]
     }

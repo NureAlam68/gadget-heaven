@@ -4,12 +4,14 @@ import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { addToStoredCart, addToStoredWish } from "../utilities/addToLs";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const gadget = data.find(item => item.id === id);
   
+  const [isWishListed, setWishListed] = useState(false);
 
   const {
     title,
@@ -27,7 +29,10 @@ const GadgetDetails = () => {
   }
 
   const handleAddWishlist = id => {
-    addToStoredWish(id)
+    if(!isWishListed){
+      addToStoredWish(id)
+      setWishListed(true)
+    }
   }
 
   
@@ -110,7 +115,8 @@ const GadgetDetails = () => {
                 <p className="text-[18px] font-bold">Add To Cart</p>
                 <IoCartOutline size={25}/>
               </button>
-              <button onClick={()=> handleAddWishlist(id)} className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
+              <button onClick={()=> handleAddWishlist(id)} disabled={isWishListed} 
+                className={`h-10 w-10 border ${isWishListed ? 'bg-gray-300' : 'bg-white'} border-[#0B0B0B1A] rounded-full flex justify-center items-center`}>
               <CiHeart size={25} />
             </button>
             </div>

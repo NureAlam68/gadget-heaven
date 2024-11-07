@@ -17,7 +17,7 @@ const Navbar = () => {
           <nav className="flex items-center gap-[48px] text-base font-bold text-white">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
-            <NavLink to="/k">Gadgets</NavLink>
+            <NavLink to="/seller">Become A Seller</NavLink>
             <NavLink to="/statistics">Statistics</NavLink>
           </nav>
           <div className="flex gap-4">
@@ -58,7 +58,7 @@ const Navbar = () => {
           <nav className="flex items-center gap-[48px] text-base font-medium text-[#0B0B0BB3]">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
-            <NavLink to="/k">Gadgets</NavLink>
+            <NavLink to="/seller">Become A Seller</NavLink>
             <NavLink to="/statistics">Statistics</NavLink>
           </nav>
           <div className="flex gap-4">
