@@ -1,4 +1,5 @@
 import { FaRegCircleXmark } from "react-icons/fa6";
+import PropTypes from "prop-types";
 
 const Wishlist = ({wish}) => {
     const {image, description, title, price} = wish
@@ -23,5 +24,11 @@ const Wishlist = ({wish}) => {
             </div>
     );
 };
+
+
+Wishlist.propTypes = {
+    wish: PropTypes.object
+}
+
 
 export default Wishlist;

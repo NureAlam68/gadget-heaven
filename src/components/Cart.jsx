@@ -1,4 +1,5 @@
 import { FaRegCircleXmark } from "react-icons/fa6";
+import PropTypes from 'prop-types';
 
 const Cart = ({cart}) => {
     const {image, description, title, price} = cart
@@ -20,5 +21,9 @@ const Cart = ({cart}) => {
             </div>
     );
 };
+
+Cart.propTypes = {
+    cart: PropTypes.object
+}
 
 export default Cart;

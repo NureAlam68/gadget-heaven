@@ -28,11 +28,9 @@ const Dashboard = () => {
 
     useEffect(()=> {
         const storedCart = getStoredCart();
-        console.log(storedCart)
 
         const cartItem = [...gadgets].filter(gadget => storedCart.includes(gadget.id))
         setCart(cartItem)
-        console.log(cartItem)
 
         const total = cartItem.reduce((sum, item) => sum + item.price, 0)
         setTotalCost(total)
@@ -125,7 +123,7 @@ const Dashboard = () => {
                         </div>
                         <div className="mt-8 flex flex-col gap-6 pb-[100px]">
                             {
-                                cartList.map(cart => <Cart cart={cart}></Cart>)
+                                cartList.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
                             }
                         </div>
                     </div> : 
@@ -135,7 +133,7 @@ const Dashboard = () => {
                         </div>
                         <div className="mt-8 flex flex-col gap-6 pb-[100px]">
                             {
-                                wishList.map(wish => <Wishlist wish={wish}></Wishlist>)
+                                wishList.map(wish => <Wishlist key={wish.id} wish={wish}></Wishlist>)
                             }
                         </div>
                     </div>

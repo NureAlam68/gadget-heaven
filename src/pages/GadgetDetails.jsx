@@ -51,8 +51,8 @@ const GadgetDetails = () => {
         </p>
       </div>
       <div className="p-8 rounded-[24px] w-[1280px] mx-auto flex gap-8 bg-white relative -mt-[200px]">
-        <div className="w-[425px]">
-          <img className="rounded-[16px] h-[496px]" src={image} alt="" />
+        <div className="w-[525px] h-[496px]">
+          <img className="rounded-[16px] h-full w-full" src={image} alt="" />
         </div>
         <div>
           <h2 className="text-[28px] font-semibold">{title}</h2>

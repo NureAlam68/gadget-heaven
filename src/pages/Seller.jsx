@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Seller = () => {
@@ -12,7 +13,7 @@ const Seller = () => {
         if (form.checkValidity()) {
           setShowModal(true);
         } else {
-          alert("Please fill all fields correctly.");
+            toast.error('Please provide email and password!');
         }
     }
 

@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 const getStoredCart = () => {
     const storedCartStr = localStorage.getItem("cart");
 
@@ -14,12 +16,13 @@ const addToStoredCart = (id) => {
     const storedCart = getStoredCart()
 
     if(storedCart.includes(id)) {
-        alert("Already exist")
+        toast.error('Already exist!');
     }
     else{
         storedCart.push(id);
         const storedCartStr = JSON.stringify(storedCart);
         localStorage.setItem("cart", storedCartStr)
+        toast.success('Successfully added in cart!');
     }
 }
 
@@ -41,12 +44,13 @@ const addToStoredWish = (id) => {
     const storedWish = getStoredWishlist()
 
     if(storedWish.includes(id)) {
-        alert("Already exist")
+        toast.error('Already exist!');
     }
     else{
         storedWish.push(id);
         const storedWishStr = JSON.stringify(storedWish);
         localStorage.setItem("wish", storedWishStr)
+        toast.success('Successfully added in wishlist!');
     }
 }
 

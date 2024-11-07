@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./Categories.css"
+import PropTypes from "prop-types";
 
 const Categories = ({categories}) => {
+    
     return (
         <div className="text-[18px] font-medium  p-6">
             <p className="flex flex-col gap-6">
@@ -16,5 +18,11 @@ const Categories = ({categories}) => {
         </div>
     );
 };
+
+
+Categories.propTypes = {
+    categories: PropTypes.object
+}
+
 
 export default Categories;

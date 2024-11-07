@@ -1,8 +1,34 @@
-# React + Vite
+# ✨ Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Short Description
+**Gadget Heaven**  is a e-commerce platform built to showcase gadgets and provide users with a seamless shopping experience. This project, based focuses on delivering structured navigation, product categories, and individual product details. Key features include a shopping cart, wishlist system, and product filtering.
 
-Currently, two official plugins are available:
+## 📚 React Fundamentals Used
+◦ **Components**: Using components for Navbar, Product Cards, Tabs, etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+◦ **State Management**:  Using useState for component state and useEffect where necessary.
+
+◦ **React Router**:  Efficient navigation and routing with useNavigate and useLocation.
+
+◦ **Conditional Rendering**:  Dynamic display of elements like the modal and cart badge.
+
+## 📊 Data Management
+◦ **Local Storage**:  Enhances data persistence, ensuring that the cart and wishlist are retained across sessions.
+
+## ✨ Key Features
+◦  **Fully Functional Shopping Cart and Wishlist**: Allows users to add items to a cart and wishlist.
+
+◦ **Dynamic Product Filtering by Category**: Sidebar categories help users filter gadgets by types like computers, phones, and more, enhancing browsing experience. 
+
+◦  **Interactive Toggling**: Effortlessly switch between **Cart** and **Wishlist** see cart and wishlist.
+
+◦  ***Detailed Product Pages**: Each gadget includes an image, name, price, description, specifications, and availability status, providing users with all necessary information.
+
+◦  **Interactive Sorting and Filtering**: Users can sort cart items by price in descending order and filter items by category, for easy navigation and selection.
+
+◦  **User-Friendly Notifications and Modals**: Toast notifications inform users when items are added to the cart or wishlist, while modals enhance user experience on successful actions.
+
+## h Requirement Document Link: file:///D:/react-js/assignment-8/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf
+
+## Live link: https://vermillion-marzipan-9c851e.netlify.app/
+
