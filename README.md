@@ -22,7 +22,7 @@
 
 ◦  **Interactive Toggling**: Effortlessly switch between **Cart** and **Wishlist** see cart and wishlist.
 
-◦  ***Detailed Product Pages**: Each gadget includes an image, name, price, description, specifications, and availability status, providing users with all necessary information.
+◦  **Detailed Product Pages**: Each gadget includes an image, name, price, description, specifications, and availability status, providing users with all necessary information.
 
 ◦  **Interactive Sorting and Filtering**: Users can sort cart items by price in descending order and filter items by category, for easy navigation and selection.
 
