@@ -4,8 +4,8 @@ const Wishlist = ({wish}) => {
     const {image, description, title, price} = wish
     return (
         <div className="p-8 border rounded-[16px] bg-white flex gap-8">
-                <div className="w-[274px]">
-                <img className="rounded-[12px] h-full" src={image} alt="" />
+                <div className="w-[274px] h-[190px]">
+                <img className="rounded-[12px] h-full w-full" src={image} alt="" />
                 </div>
                 <div className="w-[910px] flex justify-between">
                     <div>

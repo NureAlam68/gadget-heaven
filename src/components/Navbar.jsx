@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       {
-        pathname === '/' ? (
+        pathname === '/' || pathname.includes("/category") || pathname.includes("/nodata")? (
           <div className="pt-[30px] px-[30px]">
       <div className="h-[694px] bg-[#9538E2] rounded-[32px] border-[7px] relative">
         <div className="px-[130px] pt-[30px] flex justify-between items-center">

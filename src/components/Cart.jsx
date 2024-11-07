@@ -4,8 +4,8 @@ const Cart = ({cart}) => {
     const {image, description, title, price} = cart
     return (
             <div className="p-8 border rounded-[16px] bg-white flex gap-8">
-                <div className="w-[200px]">
-                <img className="rounded-[12px] h-[121px]" src={image} alt="" />
+                <div className="w-[200px] h-[124px]">
+                <img className="rounded-[12px] h-full w-full" src={image} alt="" />
                 </div>
                 <div className="w-[910px] flex justify-between">
                     <div>

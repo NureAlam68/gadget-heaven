@@ -15,12 +15,17 @@ const Dashboard = () => {
 
     const [cartList, setCart] = useState([])
     const [wishList, setWishList] = useState([]);
+    const [totalCost, setTotalCost] = useState(0)
+    
 
     useEffect(()=> {
         const storedCart = getStoredCart();
 
         const cartItem = gadgets.filter(gadget => storedCart.includes(gadget.id))
         setCart(cartItem)
+
+        const total = cartItem.reduce((sum, item) => sum + item.price, 0)
+        setTotalCost(total)
     }, [gadgets])
 
     useEffect(()=> {
@@ -29,6 +34,13 @@ const Dashboard = () => {
         const wishItem = gadgets.filter(gadget => storedWishList.includes(gadget.id))
         setWishList(wishItem)
     }, [gadgets])
+
+    const handleSort = sortType => {
+        if(sortType === "Price"){
+            const sortedCart = [...cartList].sort((a,b) => b.price - a.price)
+            setCart(sortedCart)
+        }
+    }
 
     const handleActive = status => {
         if(status === "cart"){
@@ -66,8 +78,8 @@ const Dashboard = () => {
                         <div className="flex justify-between items-center">
                             <h1 className="text-[24px] font-bold">Cart</h1>
                             <div className="flex gap-4 items-center">
-                                <h2 className="text-[24px] font-bold mr-2">Total cost: $0</h2>
-                                <button className="flex items-center gap-3 px-[22px] py-[13px] border border-[#9538E2] text-[#9538E2] rounded-[32px]"><p className="text-[18px] font-semibold">Sort by Price</p><FaSort size={21}/></button>
+                                <h2 className="text-[24px] font-bold mr-2">Total cost: ${totalCost}</h2>
+                                <button onClick={()=> handleSort("Price")} className="flex items-center gap-3 px-[22px] py-[13px] border border-[#9538E2] text-[#9538E2] rounded-[32px]"><p className="text-[18px] font-semibold">Sort by Price</p><FaSort size={21}/></button>
                                 <button className="px-[26px] py-[13px] bg-[#9538E2] rounded-[32px] text-[18px] font-medium text-white">Purchase</button>
                             </div>
                         </div>
