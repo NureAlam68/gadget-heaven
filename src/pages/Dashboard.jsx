@@ -2,12 +2,15 @@ import "./Dashboard.css"
 import { useEffect, useState } from "react";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
-import { useLoaderData } from "react-router-dom";
-import { getStoredCart, getStoredWishlist } from "../utilities/addToLs";
+import { useLoaderData, useNavigate } from "react-router-dom";
+import { clearStoredCart, getStoredCart, getStoredWishlist } from "../utilities/addToLs";
 import { FaSort } from "react-icons/fa";
+import groupImg from "../assets/group.png"
 
 const Dashboard = () => {
     const gadgets = useLoaderData();
+    const navigate = useNavigate();
+
     const [isActive, setActive] = useState({
         cart: true,
         status: "cart",
@@ -15,7 +18,10 @@ const Dashboard = () => {
 
     const [cartList, setCart] = useState([])
     const [wishList, setWishList] = useState([]);
-    const [totalCost, setTotalCost] = useState(0)
+    const [totalCost, setTotalCost] = useState(0);
+    const [showModal, setShowModal] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [modalTotalCost, setModalTotalCost] = useState(0);
     
 
     useEffect(()=> {
@@ -57,6 +63,21 @@ const Dashboard = () => {
         }
     }
 
+    const handlePurchase = () => {
+        setModalTotalCost(totalCost);
+        setShowModal(true);
+
+        setCart([]);
+        setTotalCost(0);
+        setIsDisabled(true)
+        clearStoredCart();
+    }
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        navigate("/")
+    }
+
 
     return (
         <div>
@@ -79,8 +100,20 @@ const Dashboard = () => {
                             <h1 className="text-[24px] font-bold">Cart</h1>
                             <div className="flex gap-4 items-center">
                                 <h2 className="text-[24px] font-bold mr-2">Total cost: ${totalCost}</h2>
-                                <button onClick={()=> handleSort("Price")} className="flex items-center gap-3 px-[22px] py-[13px] border border-[#9538E2] text-[#9538E2] rounded-[32px]"><p className="text-[18px] font-semibold">Sort by Price</p><FaSort size={21}/></button>
-                                <button className="px-[26px] py-[13px] bg-[#9538E2] rounded-[32px] text-[18px] font-medium text-white">Purchase</button>
+                                <button onClick={()=> handleSort("Price")} 
+                                disabled={isDisabled || cartList.length === 0}
+                                className={`flex items-center gap-3 px-[22px] py-[13px] rounded-[32px] text-[18px] font-semibold ${
+                                    isDisabled || cartList.length === 0
+                                        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                                        : "border border-[#9538E2] text-[#9538E2] hover:bg-[#9538E2] hover:text-white"
+                                }`}><p className="text-[18px] font-semibold"
+                                >Sort by Price</p><FaSort size={21}/></button>
+                                <button onClick={handlePurchase}  disabled={isDisabled || cartList.length === 0 || totalCost === 0} 
+                                    className={`px-[26px] py-[13px] rounded-[32px] text-[18px] font-medium ${
+                                        isDisabled || cartList.length === 0 || totalCost === 0
+                                            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                                        : "bg-[#9538E2] text-white hover:bg-white hover:text-[#9538E2] hover:border hover:border-[#9538E2]"
+                                    }`}>Purchase</button>
                             </div>
                         </div>
                         <div className="mt-8 flex flex-col gap-6 pb-[100px]">
@@ -101,6 +134,22 @@ const Dashboard = () => {
                     </div>
                 }
                 </div>
+                {showModal && (
+                <dialog id="congratsModal" className="modal" open>
+                    <div className="modal-box p-8 w-[400px]">
+                        <div className="flex justify-center">
+                        <img src={groupImg} alt="" />
+                        </div>
+                        <h3 className="text-[24px] font-bold text-center mt-6 mb-3">Payment Successfully</h3>
+                        <hr />
+                        <p className="py-4 text-base text-[#09080F99] font-medium text-center">Thanks for purchasing.</p>
+                        <p className="text-base text-[#09080F99] font-medium text-center">Total: ${modalTotalCost}</p>
+                        <div className="modal-action">
+                            <button onClick={handleCloseModal} className="px-[22px] py-[9px] bg-[#11000008] font-semibold w-full rounded-[32px]">Close</button>
+                        </div>
+                    </div>
+                </dialog>
+            )}
             
         </div>
     );

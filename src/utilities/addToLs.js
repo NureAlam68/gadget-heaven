@@ -50,5 +50,9 @@ const addToStoredWish = (id) => {
     }
 }
 
+const clearStoredCart = () => {
+    localStorage.removeItem("cart")
+}
 
-export {getStoredCart, getStoredWishlist, addToStoredCart, addToStoredWish}
+
+export {getStoredCart, getStoredWishlist, addToStoredCart, addToStoredWish, clearStoredCart}
