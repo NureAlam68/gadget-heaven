@@ -5,9 +5,8 @@ import GadgetCards from "../components/GadgetCards";
 import NoData from "../components/NoData";
 import GadgetDetails from "../pages/GadgetDetails";
 import Dashboard from "../pages/Dashboard";
-import Cart from "../components/Cart";
-import Wishlist from "../components/Wishlist";
-
+import ErrorPage from "../pages/ErrorPage";
+import Statistics from "../pages/Statistics";
 
 
 
@@ -15,6 +14,7 @@ const routes = createBrowserRouter([
     {
         path: "/",
         element: <Layout></Layout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -46,6 +46,10 @@ const routes = createBrowserRouter([
                 path: "/dashboard",
                 element: <Dashboard></Dashboard>,
                 loader: ()=> fetch("../data.json"),
+            },
+            {
+                path: "/statistics",
+                element: <Statistics></Statistics>
             }
         ]
     }

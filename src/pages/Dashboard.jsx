@@ -6,9 +6,11 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import { clearStoredCart, getStoredCart, getStoredWishlist } from "../utilities/addToLs";
 import { FaSort } from "react-icons/fa";
 import groupImg from "../assets/group.png"
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
     const gadgets = useLoaderData();
+    
     const navigate = useNavigate();
 
     const [isActive, setActive] = useState({
@@ -26,9 +28,11 @@ const Dashboard = () => {
 
     useEffect(()=> {
         const storedCart = getStoredCart();
+        console.log(storedCart)
 
-        const cartItem = gadgets.filter(gadget => storedCart.includes(gadget.id))
+        const cartItem = [...gadgets].filter(gadget => storedCart.includes(gadget.id))
         setCart(cartItem)
+        console.log(cartItem)
 
         const total = cartItem.reduce((sum, item) => sum + item.price, 0)
         setTotalCost(total)
@@ -37,7 +41,7 @@ const Dashboard = () => {
     useEffect(()=> {
         const storedWishList = getStoredWishlist();
 
-        const wishItem = gadgets.filter(gadget => storedWishList.includes(gadget.id))
+        const wishItem = [...gadgets].filter(gadget => storedWishList.includes(gadget.id))
         setWishList(wishItem)
     }, [gadgets])
 
@@ -78,9 +82,11 @@ const Dashboard = () => {
         navigate("/")
     }
 
-
     return (
         <div>
+            <Helmet>
+                <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
             <div className="h-[256px] bg-[#9538E2] p-8">
             <h1 className="text-[32px] font-bold text-white text-center">Dashboard</h1>
             <p className="w-[796px] mx-auto text-center mt-4 text-white font-normal text-base">
@@ -100,7 +106,8 @@ const Dashboard = () => {
                             <h1 className="text-[24px] font-bold">Cart</h1>
                             <div className="flex gap-4 items-center">
                                 <h2 className="text-[24px] font-bold mr-2">Total cost: ${totalCost}</h2>
-                                <button onClick={()=> handleSort("Price")} 
+                                <button
+                                 onClick={()=> handleSort("Price")} 
                                 disabled={isDisabled || cartList.length === 0}
                                 className={`flex items-center gap-3 px-[22px] py-[13px] rounded-[32px] text-[18px] font-semibold ${
                                     isDisabled || cartList.length === 0

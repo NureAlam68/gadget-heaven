@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./Card";
+import { Helmet } from "react-helmet-async";
 
 const GadgetCards = () => {
     const data = useLoaderData();
@@ -21,6 +22,9 @@ const GadgetCards = () => {
     return (
       
        <>
+       <Helmet>
+       <title>{category ? `${category} | Gadget Heaven` : "Gadgets | Gadget Heaven"}</title>
+       </Helmet>
        
        <div className="grid grid-cols-3 gap-6 mb-[48px]">
         {

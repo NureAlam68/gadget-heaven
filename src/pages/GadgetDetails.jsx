@@ -3,6 +3,7 @@ import { FaSquareFull } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { addToStoredCart, addToStoredWish } from "../utilities/addToLs";
+import { Helmet } from "react-helmet-async";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
@@ -32,6 +33,9 @@ const GadgetDetails = () => {
   
   return (
     <div className="pb-[100px]">
+      <Helmet>
+        <title>Details | Gadget Heaven</title>
+      </Helmet>
       <div className="h-[375px] bg-[#9538E2]">
         <h2 className="text-[32px] font-bold text-center text-white pt-8">
           Product Details

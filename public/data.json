@@ -4,7 +4,7 @@
     "title": "Dell XPS 15",
     "image": "https://i.ibb.co.com/Xjn4J48/computer-technology-illuminates-modern-office-with-creativity-connection-generated-by-artificial-int.jpg",
     "category": "Laptops",
-    "price": 1200,
+    "price": 1000,
     "description": "Dell XPS 15 laptop with stunning 4K display and powerful performance.",
     "specification": [
       "Intel Core i7",
@@ -20,7 +20,7 @@
     "title": "HP Spectre x360",
     "image": "https://i.ibb.co.com/3yS3H40/672176.jpg",
     "category": "Laptops",
-    "price": 950,
+    "price": 1150,
     "description": "HP Spectre x360 convertible laptop with 4K touchscreen.",
     "specification": [
       "Intel Core i5",
@@ -36,7 +36,7 @@
     "title": "Lenovo ThinkPad X1",
     "image": "https://i.ibb.co.com/q1p84wv/8147100.jpg",
     "category": "Laptops",
-    "price": 1100,
+    "price": 1200,
     "description": "Lightweight and durable laptop, ideal for business professionals.",
     "specification": [
       "Intel Core i5",
@@ -52,7 +52,7 @@
     "title": "Surface Laptop 4",
     "image": "https://i.ibb.co.com/5kVrb2N/jaime-marrero-d-48t-65gdo-unsplash.jpg",
     "category": "Laptops",
-    "price": 1050,
+    "price": 1250,
     "description": "Powerful and sleek laptop with touchscreen functionality.",
     "specification": [
       "Intel Core i7",
@@ -68,7 +68,7 @@
     "title": "Acer Aspire 5",
     "image": "https://i.ibb.co.com/W2vmz78/anete-lusina-zws-Hjak-E-i-I-unsplash.jpg",
     "category": "Laptops",
-    "price": 850,
+    "price": 800,
     "description": "Affordable laptop suitable for students and everyday tasks.",
     "specification": [
       "Intel Core i5",
@@ -84,7 +84,7 @@
     "title": "ASUS VivoBook 15",
     "image": "https://i.ibb.co.com/Z1mwz7N/1400379.jpg",
     "category": "Laptops",
-    "price": 700,
+    "price": 850,
     "description": "Budget-friendly laptop with decent performance for daily use.",
     "specification": [
       "AMD Ryzen 3",
@@ -97,22 +97,6 @@
   },
   {
     "id": "7",
-    "title": "Galaxy S21 Ultra",
-    "image": "https://i.ibb.co.com/TTCJrwN/anh-nhat-u-Cq-Ma-s-JDg-unsplash.jpg",
-    "category": "Phones",
-    "price": 800,
-    "description": "Samsung Galaxy S21 with high-resolution camera and 5G support.",
-    "specification": [
-      "Exynos 2100",
-      "8GB RAM",
-      "128GB Storage",
-      "Triple-lens camera"
-    ],
-    "availability": true,
-    "rating": 4.6
-  },
-  {
-    "id": "8",
     "title": "Google Pixel 6",
     "image": "https://i.ibb.co.com/bXQW3LH/amjith-s-SXxuzn-ANFj-E-unsplash.jpg",
     "category": "Phones",
@@ -126,6 +110,22 @@
     ],
     "availability": true,
     "rating": 4.2
+  },
+  {
+    "id": "8",
+    "title": "Galaxy S21 Ultra",
+    "image": "https://i.ibb.co.com/TTCJrwN/anh-nhat-u-Cq-Ma-s-JDg-unsplash.jpg",
+    "category": "Phones",
+    "price": 900,
+    "description": "Samsung Galaxy S21 with high-resolution camera and 5G support.",
+    "specification": [
+      "Exynos 2100",
+      "8GB RAM",
+      "128GB Storage",
+      "Triple-lens camera"
+    ],
+    "availability": true,
+    "rating": 4.6
   },
   {
     "id": "9",
@@ -148,7 +148,7 @@
     "title": "Samsung Galaxy Watch",
     "image": "https://i.ibb.co.com/xJ9cYgT/high-angle-man-wearing-watch.jpg",
     "category": "Smart Watches",
-    "price": 350,
+    "price": 450,
     "description": "Samsung Galaxy Watch with advanced fitness tracking and 4G LTE.",
     "specification": [
       "AMOLED display",

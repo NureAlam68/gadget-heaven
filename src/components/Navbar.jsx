@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 
@@ -12,14 +12,14 @@ const Navbar = () => {
       <div className="h-[694px] bg-[#9538E2] rounded-[32px] border-[7px] relative">
         <div className="px-[130px] pt-[30px] flex justify-between items-center">
           <div>
-            <h2 className="text-[20px] text-white font-bold">Gadget Heaven</h2>
+            <h2 className="text-[20px] text-white font-bold"><Link to="/">Gadget Heaven</Link></h2>
           </div>
-          <div className="flex gap-[48px] text-base font-bold text-white">
+          <nav className="flex items-center gap-[48px] text-base font-bold text-white">
             <NavLink to="/">Home</NavLink>
-            <NavLink>Gadgets</NavLink>
-            <NavLink>Statistics</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
-          </div>
+            <NavLink to="/k">Gadgets</NavLink>
+            <NavLink to="/statistics">Statistics</NavLink>
+          </nav>
           <div className="flex gap-4">
             <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
               <IoCartOutline size={20} />
@@ -38,9 +38,9 @@ const Navbar = () => {
             it all!
           </p>
           <div className="flex justify-center mt-8">
-          <button className="bg-white text-[#9538E2] px-[30px] py-[15px] rounded-[32px] text-[20px] font-bold">
+          <Link to="/dashboard" className="bg-white text-[#9538E2] px-[30px] py-[15px] rounded-[32px] text-[20px] font-bold">
             Shop Now
-          </button>
+          </Link>
           </div>
         </div>
       </div>
@@ -53,14 +53,14 @@ const Navbar = () => {
         ) : (
           <div className="px-[130px] py-[30px] flex justify-between items-center">
           <div>
-            <h2 className="text-[20px] font-bold">Gadget Heaven</h2>
+            <h2 className="text-[20px] font-bold"><Link to="/">Gadget Heaven</Link></h2>
           </div>
-          <div className="flex gap-[48px] text-base font-medium text-[#0B0B0BB3]">
+          <nav className="flex items-center gap-[48px] text-base font-medium text-[#0B0B0BB3]">
             <NavLink to="/">Home</NavLink>
-            <NavLink>Gadgets</NavLink>
-            <NavLink>Statistics</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
-          </div>
+            <NavLink to="/k">Gadgets</NavLink>
+            <NavLink to="/statistics">Statistics</NavLink>
+          </nav>
           <div className="flex gap-4">
             <button className="h-10 w-10 border bg-white border-[#0B0B0B1A] rounded-full flex justify-center items-center">
               <IoCartOutline size={20} />

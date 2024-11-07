@@ -1,14 +1,14 @@
 import { Helmet } from "react-helmet-async";
 
-const NoData = () => {
+const Statistics = () => {
     return (
-        <div>
+        <div className="mt-[100px] pb-[200px]">
             <Helmet>
-                <title>MacBook | Gadget Heaven</title>
+                <title>Statistics | Gadget Heaven</title>
             </Helmet>
             <h1 className="text-[44px] font-bold text-center text-[#9538E2]">No Data Found</h1>
         </div>
     );
 };
 
-export default NoData;
+export default Statistics;
