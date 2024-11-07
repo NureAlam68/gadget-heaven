@@ -28,7 +28,7 @@
 
 ◦  **User-Friendly Notifications and Modals**: Toast notifications inform users when items are added to the cart or wishlist, while modals enhance user experience on successful actions.
 
-## h Requirement Document Link: file:///D:/react-js/assignment-8/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf
+## Requirement Document Link: [Requirement Document](Batch-10_Assignment-08.pdf)
 
 ## Live link: https://vermillion-marzipan-9c851e.netlify.app/
 
